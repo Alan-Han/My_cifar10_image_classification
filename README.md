@@ -17,7 +17,7 @@ ios 10.13  python 3.5.4  tensorflow 1.2.0
 
 ## 3. 训练模型
 
-(1)模型存放在cnn.py，CNN网络结构为2个卷积池化层连接2个全连接层，每个全连接层后采用dropout
+(1)模型存放在cnn.py，CNN网络结构为：卷积+池化+卷积+池化+全连接+dropout+全连接+dropout
 
 (2)主程序中运行train()开始训练，设置optimizer = tf.train.AdamOptimizer().minimize(cost)，训练200次，训练时全连接层的dropout概率为0.5
 
